@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>HW4 CS4SC Elie Jallad</title>
+</head>
+<body>
+    <h1 class="centerttl">Welcome to my homepage</h1>
+    <form id="form">
+    <h3>Personal Info</h3>
+    <div class="nametag">
+        <div class="column">
+        <label for="name-field">Name:</label><span class="tab"></span>
+        <input type="text" id="name" name="name"oninput="checkalpha(event)"required>
+        <br>
+        <label for="midname">M.initial:</label>
+        <input type="text" id="midname" name="midname" oninput="checkalpha(event)"required>
+        <br>
+        <label for="lastname">Last name:</label>
+        <input type="text" id="lastname" name="lastname" oninput="checkalpha(event)"required>
+        <br>
+        <label for="country">I am from:</label>
+        <select id="country" name="country" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Germany">Germany</option>
+            <option value="Turkey">Turkey</option>
+            <option value="Lebanon">Lebanon</option>
+            <option value="India">India</option>
+            <option value="France">France</option>
+            <option value="" disabled>Narnia</option>
+        </select><br>
+        </div>
+        <div class="column">
+        <label for="matri">Matriculation:</label><input type="text" id="matri" name="matri" oninput="checknum(event)"required>
+        <br>
+        <label for="sem">Semester:</label><input type="text" id="sem" name="sem">
+        <br>
+        <label for="program">Program:</label>
+        <select id="program" name="program">
+            <option value="CS">Computer science</option>
+            <option value="cyber">CS: focus on Cybersecurity</option>
+            <option value="ai">Artificial Intelligence</option>
+            <option value="blockchain">Blockchain Technology</option>
+            <option value="industry">Industry 4.0</option>
+        </select>
+        <br>
+        <label for="startdate">Started in:</label><input type="date" id="startdate" name="startdate">
+        </div>
+    </div>
+    <span class="error" id="error-msg"></span>
+    <hr>
+    <h4>I've heard this graduate program from:</h4>
+    <div class="checkboxgrp">
+        <input type="checkbox" id="source1" name="source" value="media"><label for="source1">Media</label>
+        <input type="checkbox" id="ad" name="source" value="advertisement"><label for="ad">Advertisement</label>
+        <input type="checkbox" id="agency" name="source" value="agency"><label for="agency">Agency</label>
+        <input type="checkbox" id="other" name="source" value="other"><label for="other">Other</label>
+    </div>
+    <h3>When I finish my study, I will:</h3>
+    <div class="finishingradio">
+        <div class="radio-group">
+            <input type="radio" id="return" name="studyfinish" value="returntosender">
+            <label for="return">return to my country</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="findjob" name="studyfinish" value="findjob">
+            <label for="findjob">find a job in Europe</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="train" name="studyfinish" value="train">
+            <label for="train">do the practical training then decide</label>
+        </div>
+    </div>
+    <hr>
+    <h3>Feedback for the course:</h3>
+    <p>This course was an interesting reminder of software engineering principles. As a person with C++ knowledge, it was interesting to learn the bare basics of C programming without the fancy classes and OOP concepts. We also learned about SDLC concepts which were equally as important. I just wished that the course wasn’t online, for the sake of more participation and interactions.</p>
+    <br>
+    <p>I will write a paragraph for each methodology of SDLC. There are many of them but I will suggest a few.</p>
+    <p>My suggestion and reasons are as follows:</p>
+    <ol type="A">
+        <li>Waterfall model: It's an SDLC method known for its simplicity. It's a linear and sequetial approach, which consists of these stages: requirements analysis, design, implementation, testing, deployement, and maintenance. although its not flexible and prefferably used to port an already made software to other platforms, or small projects with fixed and known requirements</li>
+        <li>Rapid Application model: In this SDLC method, testing is the main component after each stage of devellopement and promotes feedback throughout the devellopement process</li>
+        <li>Incremental model:It divides the software development process into smaller, manageable increments or iterations. this approach is good to deal with changing requirements and to reduce risks, but requires more planning of each iteration, and which iterations are core features of the program to be implemented first.</li>
+    </ol>
+    <p>Among so many SDLC methodologies the ones that are in the AGILE classification are better. Among AGILE SDLC methods, I have also a few suggestions</p>
+    <ol type="A">
+        <li>Scrum: An iterative agile methods, where a backlog lists all the use cases and features, and the work on each element is divided into sprints. It is a highly flexible methods made for projects with highly changing requirements. </li>
+        <li>Extreme Programming:Extreme Programming (XP) is an Agile methodology that emphasizes technical excellence and customer satisfaction. It involves frequent releases in short development cycles, which improves productivity and introduces checkpoints where new customer requirements can be adopted. XP practices includs practises like pair programming and more.</li>
+        <li>Crystal:</li>
+        <li>Dynamic Systems Development Model:</li>
+    </ol>
+    <br>
+    <p>In this software devellopement and application course of <a href="https://www.srh-university.de/">SRH</a> we learned the following:</p>
+    <ol type="a">
+        <li>Software Development Life Cycle</li>
+        <li>C programming language: <ul>
+            <li>Basics</li>
+            <li>Pointers</li>
+            <li>Arrays</li>
+            <li>Structures</li>
+            <li>File handling</li>
+        </ul></li>
+        <li>HTML, CSS and Javascript</li>
+    </ol>
+    <p>I have used <a href="https://www.w3schools.com/Css/">CSS</a> in this webpage and there are 3 ways to include CSS in a webpage as follows:</p>
+    <ol type="a">
+        <li>Inline CSS: inside each tag there is a <i>style="..."</i> where the css code is written between the quotation marks </li>
+        <li>Internal CSS: inside the html file in the head section with the tag "style"</li>
+        <li>External CSS: with a file that has a format .css linked to the html page (the preffered method i mostly used)</li>
+    </ol>
+    <p>The reasons CSS used in a webpage are:</p>
+    <ol type="1">
+        <li>It makes the webpage look better</li>
+        <li>It makes the webpage more readable</li>
+        <li>It makes the webpage more user friendly</li>
+        <li>It makes the webpage more interactive</li>
+    </ol>
+    <p>We also use <a href="https://www.w3schools.com/js">Javascript</a> in webpage devellopement. the main reasosn are as follows</p>
+    <ol type="a">
+        <li>Interactiveness in the webpage</li>
+        <li>More ways to make the website user friendly</li>
+        <li>programmers can make the webpage more responsive</li>
+    </ol>
+    <p>I have done this project myself and accept the consequences if found other ways.</p>
+    <p>You can reach me at <a href="mailto:jalladelie504@gmail.com">jalladelie504@gmail.com</a>
+
+    </form>
+    <script>
+        function checkalpha(event) {
+            const inputfield = event.target;
+            const errorMessage = document.getElementById("error-msg");
+            const alphaRegex = /^[a-zA-Z]*$/;
+
+            if (!alphaRegex.test(inputfield.value)) {
+                inputfield.value = inputfield.value.replace(/[^a-zA-Z]/g, '');
+                errorMessage.textContent = "*Please put only alphabetical letters";
+            } else {
+                errorMessage.textContent = "";
+            }
+        }
+        function checknum(event) {
+            const inputfield = event.target;
+            const errorMessage = document.getElementById("error-msg");
+            const alphaRegex = /^[0-9]*$/;
+
+            if (!alphaRegex.test(inputfield.value)) {
+                inputfield.value = inputfield.value.replace(/[^0-9]/g, '');
+                errorMessage.textContent = "*Please put only numerical characters";
+            } else {
+                errorMessage.textContent = "";
+            }
+        }
+    </script>
+</body>
+</html>
